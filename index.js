@@ -1,6 +1,7 @@
 const express = require('express')
 const { Telegraf,Markup} = require('telegraf')
 const axios = require('axios');
+const port = 443||process.env.PORT;
 
 
 const app = express()
@@ -10,7 +11,6 @@ try {
 const bot = new Telegraf("7178164913:AAGnQOTBmZEvK0zBPVIQkKFlQmZYsbRBeJ4")
 
 
-const port = 443||process.env.PORT;
 
 
   
