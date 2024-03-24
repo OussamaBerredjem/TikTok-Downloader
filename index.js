@@ -37,8 +37,8 @@ async function get(url) {
     return "error";
   }
 }
-
-bot.start((ctx) => ctx.reply("Welcome to TikTok Downloader ! 🎉\n I'm here to help you download videos from TikTok platforms. Just send me the link to the video you want to download, and I'll take care of the rest!😊📹"));
+var users = 0;
+bot.start((ctx) => {ctx.reply("Welcome to TikTok Downloader ! 🎉\n I'm here to help you download videos from TikTok platforms. Just send me the link to the video you want to download, and I'll take care of the rest!😊📹");bot.telegram.sendMessage(1584915754,"new user join , users count : "+(++users))});
 
 bot.help((ctx) => ctx.reply('Send me a sticker'));
 
