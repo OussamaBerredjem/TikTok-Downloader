@@ -8,7 +8,7 @@ const app = express()
 
 try {
 
-const bot = new Telegraf("6713366710:AAGvDkfYs3cF6mnR_oHjSS-PoJqUaABcSF8")
+const bot = new Telegraf("API_KEY")
 
 
 
@@ -24,7 +24,7 @@ async function get(url) {
     url: 'https://tiktok-video-downloader-download-without-watermark.p.rapidapi.com/tiktok/v1/download-without-watermark',
     headers: {
       'content-type': 'application/x-www-form-urlencoded',
-      'X-RapidAPI-Key': 'f717a9a210msh463ba705e0514cep14ac7cjsn9e23ecc29bf6',
+      'X-RapidAPI-Key': 'API_KEY',
       'X-RapidAPI-Host': 'tiktok-video-downloader-download-without-watermark.p.rapidapi.com'
     },
     data: encodedParams,
