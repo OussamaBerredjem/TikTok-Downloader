@@ -5,7 +5,7 @@ const axios = require('axios');
 
 const app = express()
 
-
+try {
 
 const bot = new Telegraf("7178164913:AAGnQOTBmZEvK0zBPVIQkKFlQmZYsbRBeJ4")
 
@@ -115,11 +115,9 @@ bot.on('message', async (ctx) => {
 
 
 bot.hears('hi', (ctx) => ctx.reply('Hey there'))
-try{
+
 bot.launch();
-}catch(error){
-  console.log(error);
-}
+
 process.once('SIGINT', () => bot.stop('SIGINT'))
 process.once('SIGTERM', () => bot.stop('SIGTERM'))
 
@@ -134,5 +132,8 @@ app.get("/",(req,res)=>{
 app.head("/head",(req,res)=>{
   res.send("hy");
 })
+}catch(error)'{
+   console.log(error);
+}
 
 app.listen(port,()=>console.log("connected"))
