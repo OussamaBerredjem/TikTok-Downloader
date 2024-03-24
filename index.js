@@ -115,8 +115,11 @@ bot.on('message', async (ctx) => {
 
 
 bot.hears('hi', (ctx) => ctx.reply('Hey there'))
+try{
 bot.launch();
-
+}catch(error){
+  console.log(error);
+}
 process.once('SIGINT', () => bot.stop('SIGINT'))
 process.once('SIGTERM', () => bot.stop('SIGTERM'))
 
