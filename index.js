@@ -132,7 +132,7 @@ app.get("/",(req,res)=>{
 app.head("/head",(req,res)=>{
   res.send("hy");
 })
-}catch(error)'{
+}catch(error){
    console.log(error);
 }
 
