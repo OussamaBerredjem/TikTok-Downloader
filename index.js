@@ -8,7 +8,7 @@ const app = express()
 
 try {
 
-const bot = new Telegraf("7178164913:AAGnQOTBmZEvK0zBPVIQkKFlQmZYsbRBeJ4")
+const bot = new Telegraf("6713366710:AAGvDkfYs3cF6mnR_oHjSS-PoJqUaABcSF8")
 
 
 
